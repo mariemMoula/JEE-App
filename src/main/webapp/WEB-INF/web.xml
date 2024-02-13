@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <servlet-name>testServlet</servlet-name>
+    <servlet-class>com.testingservlets.servlets.testServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testServlet</servlet-name>
+    <url-pattern>/mimi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>acceuilServlet</display-name>
+    <servlet-name>acceuilServlet</servlet-name>
+    <servlet-class>com.testingservlets.servlets.acceuilServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>acceuilServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Formulaire</display-name>
+    <servlet-name>Formulaire</servlet-name>
+    <servlet-class>com.testingservlets.servlets.Formulaire</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Formulaire</servlet-name>
+    <url-pattern>/Formulaire</url-pattern>
+  </servlet-mapping>
+</web-app>
